@@ -4,7 +4,7 @@ create table Suppliers(
 				SID varchar(20) not null primary key,
                 SName varchar(30) not null,
                 SPhone varchar(11) not null,
-                SAdd varchar(30) not null
+               // SAdd varchar(30) not null
 );
 
 alter table Products add foreign key (PSupID) references Suppliers(SID);
